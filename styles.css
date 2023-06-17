@@ -1,9 +1,19 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 ul {
     list-style: none;
+    text-decoration: none;
+}
+
+section {
+    height: 900px;
 }
 
 .header {
@@ -13,7 +23,7 @@ ul {
     box-sizing: border-box;
     height: 100vh;
     padding: 64px 120px;
-    background-image: url(./img/Headphones-image-1.png);
+    background-image: url(./img/headphones_image.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,6 +36,7 @@ ul {
 
 .menu {
 padding: 64px 120px;
+background-color: #E8EFF9;
 }
 
 .menu_top {
@@ -34,6 +45,15 @@ padding: 64px 120px;
     margin-bottom: 64px;
 }
 
-.list_item {
+.nav_item {
     margin-bottom: 32px;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: #292929;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 2px;
 }

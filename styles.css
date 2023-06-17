@@ -5,6 +5,9 @@ html {
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
+    color: #292929;
+    font-size: 16px;
+    line-height: 140%;
 }
 
 ul {
@@ -12,9 +15,9 @@ ul {
     text-decoration: none;
 }
 
-section {
+/* section {
     height: 900px;
-}
+} */
 
 .header {
     display: flex;
@@ -34,9 +37,30 @@ section {
     justify-content: space-between;
 }
 
+.header_title {
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+}
+
 .menu {
-padding: 64px 120px;
-background-color: #E8EFF9;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 500ms;
+    height: 100vh;
+    padding: 64px 120px;
+    background-color: #E8EFF9;
+}
+.menu:target {
+    transform: translateX(-0%);
+
 }
 
 .menu_top {
@@ -51,9 +75,68 @@ background-color: #E8EFF9;
 
 .nav_link {
     text-decoration: none;
-    color: #292929;
     font-weight: 700;
     font-size: 22px;
     line-height: 22px;
     letter-spacing: 2px;
+}
+
+.main {
+    padding: 120px;
+}
+
+.recommended {
+    margin-bottom: 120px;
+}
+
+.recommended_title{
+    margin-top: 0;
+    margin-bottom: 64px;
+    font-size: 48px;
+    line-height: 100%;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -1.5px;
+}
+
+.recommended_hedline {
+    margin-top: 32px;
+    margin-bottom: 0;
+}
+
+.recommended_desc {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.recommended_price {
+    margin-top: 12px;
+    margin-bottom: 0px;
+    font-weight: 700
+
+}
+
+.layer {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.categories_title {
+    margin-top: 0;
+    margin-bottom: 64px;
+    font-size: 48px;
+    line-height: 100%;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -1.5px;  
+}
+
+.how_to_buy_title {
+    margin-top: 0;
+    margin-bottom: 64px;
+    font-size: 48px;
+    line-height: 100%;
+    font-weight: 700;
+    letter-spacing: -1.5px;  
 }

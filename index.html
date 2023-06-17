@@ -6,25 +6,25 @@
     <title>BOSE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <div class="header_top">
             <img src="./img/logo.png" width="190" height="24" alt="logo">
-            <img src="./img/icons/burger_menu.png" width="24" height="24" alt="burger menu">    
+            <a href="#menu"><img src="./img/icons/burger_menu.png" width="24" height="24" alt="burger menu"></a>
         </div>
 
         <div class="header_bottom">
             <img src="./img/sound.png" width="64" height="76" alt="sound weves">
-            <h1>The world shades. <br> Your music shines.</h1>
+            <h1 class="header_title">The world shades. <br> Your music shines.</h1>
         </div>
     </header>
-    <div class="menu">
+    <div class="menu" id="menu">
         <div class="menu_top">
             <img src="./img/logo.png" width="190" height="24" alt="logo">
-            <img src="./img/icons/close.png" width="24" height="24" alt="close">    
+            <a href="#home"><img src="./img/icons/close.png" width="24" height="24" alt="close"></a>
         </div>
         <nav class="nav">
             <ul>
@@ -35,15 +35,22 @@
             </ul>    
         </nav>
     </div>
-    <main>
-        <section id="recommended">
-            <h2>Recommended</h2>
+    <main class="main">
+        <section id="recommended" class="recommended">
+            <h2 class="recommended_title">Recommended</h2>
+            <ul class="layer">
+                <li><img src="./img/recommended/layer_1.png" width="324" height="320" alt="layer"><h3 class="recommended_hedline">Bose portable Smart speaker</h3><p class="recommended_desc">Smart home</p><p class="recommended_price">$ 399.00</p></li>
+                <li><img src="./img/recommended/layer_3.png" width="324" height="320" alt="layer"><h3 class="recommended_hedline">SoundLink Flex Bluetooth speaker</h3><p class="recommended_desc">Portable bluetooth</p><p class="recommended_price">$ 149.00</p></li>
+                <li><img src="./img/recommended/layer_2.png" width="324" height="320" alt="layer"><h3 class="recommended_hedline">SoundLink Color Bluetooth speaker II</h3><p class="recommended_desc">Portable bluetooth</p><p class="recommended_price">$ 129.00</p></li>
+            </ul>
         </section>
+
         <section id="categories">
-            <h2>Browse Bose <br> products by category</h2>
+            <h2 class="categories_title">Browse Bose <br> products by category</h2>
         </section>
+
         <section id="how_to_buy">
-            <h2>Why buy direct <br> from Bose</h2>
+            <h2 class="how_to_buy_title">Why buy direct <br> from Bose</h2>
         </section>
     </main>
     <footer></footer>

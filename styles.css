@@ -15,10 +15,6 @@ ul {
     text-decoration: none;
 }
 
-/* section {
-    height: 900px;
-} */
-
 .header {
     display: flex;
     flex-direction: column;
@@ -83,6 +79,7 @@ ul {
 
 .main {
     padding: 120px;
+    background-color: white;
 }
 
 .recommended {
@@ -132,11 +129,58 @@ ul {
     letter-spacing: -1.5px;  
 }
 
+.category {
+    max-width: 1020px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+}
+
+.img {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 16px;
+}
+
 .how_to_buy_title {
-    margin-top: 0;
+    margin-top: 56px;
     margin-bottom: 64px;
     font-size: 48px;
     line-height: 100%;
     font-weight: 700;
     letter-spacing: -1.5px;  
+    flex-basis: 50%;
+}
+
+.how_to_by {
+    display: flex;
+    gap: 24px;
+    max-width: 1020px;
+    margin: 0 auto;
+
+}
+
+.how_to_buy_content {
+    flex-basis: 50%;
+    margin-top: 56px;
+}
+
+.how_to_buy_benefits {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column  ;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.footer {
+    background-image: url(./img/Rectangle\ 27.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 460px;
+    position: sticky;
+    bottom: 0;
+    z-index: -1;
 }
